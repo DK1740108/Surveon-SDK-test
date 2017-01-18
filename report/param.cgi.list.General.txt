@@ -1,0 +1,83 @@
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Properties.System.Language=traditional_chinese
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.Brand
+[Ret]: Success
+root.Brand.Brand=Surveon
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.ProdFullName
+[Ret]: Success
+root.Brand.ProdFullName=Surveon CAM2441
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.ProdNbr
+[Ret]: Success
+root.Brand.ProdNbr=2441HI-3
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.ProdShortName
+[Ret]: Success
+root.Brand.ProdShortName=CAM2441HI-3
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.ProdType
+[Ret]: Success
+root.Brand.ProdType=Network Camera
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.WebURL
+[Ret]: Success
+root.Brand.WebURL=http://www.surveontech.com/
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Brand.plat_type%2Fcamtype%2FOEM_model_name
+[Ret]: Success
+root.Brand.plat_type/camtype/OEM_model_name=GM8139/CAM2441/CAM2441HI-3
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.HostName=CAM2441HI-3aa&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.CameraName=CAM2441HI-3bb
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Layout.FreeLiveview
+[Ret]: Success
+root.Layout.FreeLiveview=no
+
+[URL]: http://172.30.10.208/surveon-cgi/pwdgrp.cgi?action=get
+[Ret]: Success
+admin = Administrator
+aaa = Administrator
+aaaaa = Administrator
+guest = Operator
+
+[URL]: http://172.30.10.208/surveon-cgi/pwdgrp.cgi?action=add&pwd=12345&user=aaaaa&grp=Administrator
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/pwdgrp.cgi?action=add&pwd=62222&user=bbbbb&grp=Operator
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/pwdgrp.cgi?action=remove&pwd=62222&user=bbbbb&grp=Operator
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/date.cgi?action=get
+[Ret]: Failed
+5 10, 2008 10:16:45
+#Request failed:<-2>
+[URL]: http://172.30.10.208/surveon-cgi/date.cgi?PWD=admin&USER=admin&hour=10&year=2008&action=set&second=10&day=10&minute=10&month=5
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Time.TimeZone=gmt%2B07%3A00&USER=admin
+[Ret]: Failed
+# Error: Error -1 'Time.TimeZone' update failed
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Time.SyncSource=NTP
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Time.NTP.Server=cn.pool.ntp.org
+[Ret]: Success
+OK
+

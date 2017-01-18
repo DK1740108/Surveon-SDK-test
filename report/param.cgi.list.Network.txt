@@ -1,0 +1,182 @@
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.SystemDevice
+[Ret]: Success
+root.Network.Interface.I0.SystemDevice=eth0
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Type
+[Ret]: Success
+root.Network.Interface.I0.Type=802.3
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active
+[Ret]: Success
+root.Network.Interface.I0.Active.MACAddress=00:d0:23:60:ca:51
+root.Network.Interface.I0.Active.Active=yes
+root.Network.Interface.I0.Active.IPAddress=172.30.10.208
+root.Network.Interface.I0.Active.SubnetMask=255.255.0.0
+root.Network.Interface.I0.Active.Broadcast=172.30.10.255
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.MACAddress
+[Ret]: Success
+root.Network.Interface.I0.Active.MACAddress=00:d0:23:60:ca:51
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.Active
+[Ret]: Success
+root.Network.Interface.I0.Active.Active=yes
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.IPAddress
+[Ret]: Success
+root.Network.Interface.I0.Active.IPAddress=172.30.10.208
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.SubnetMask
+[Ret]: Success
+root.Network.Interface.I0.Active.SubnetMask=255.255.0.0
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.Broadcast
+[Ret]: Success
+root.Network.Interface.I0.Active.Broadcast=172.30.10.255
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.IPV6Address
+[Ret]: Failed
+# Error: Error -1 getting param in group 'network.interface.i0.active.ipv6address'
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Interface.I0.Active.PrefixLengthV6
+[Ret]: Failed
+# Error: Error -1 getting param in group 'network.interface.i0.active.prefixlengthv6'
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.Interface.I0.Link.BootProto=none
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.BootProto=none&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.BootProto=dhcp&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.Interface.I0.Manual.IPAddress=172.30.10.112&PWD=admin&USER=admin
+[Ret]: Failed
+# Error: Error -1 'Network.Interface.I0.Manual.IPAddress' update failed
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.IPAddress=172.30.10.208&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.Interface.I0.Manual.SubnetMask=255.255.0.0
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.SubnetMask=255.255.0.0&PWD=admin&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.Interface.I0.Manual.DefaultRouter=172.30.10.254
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.Interface.I0.Manual.DefaultRouter=172.30.10.254
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Resolver
+[Ret]: Success
+root.Network.Resolver.NameServer1=192.168.99.100
+root.Network.Resolver.NameServer2=192.168.99.101
+root.Network.Resolver.NameServerList=ezip pgpow dhs dyndns dyndns-static dyndns-custom ods tzo easydns easydns-partner gnudip justlinux dyns hn zoneedit 
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Resolver.NameServer1
+[Ret]: Success
+root.Network.Resolver.NameServer1=192.168.99.100
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=list&group=Network.Resolver.NameServerList
+[Ret]: Success
+root.Network.Resolver.NameServerList=ezip pgpow dhs dyndns dyndns-static dyndns-custom ods tzo easydns easydns-partner gnudip justlinux dyns hn zoneedit 
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.DNSServer1=192.168.99.100
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.DNSServer2=192.168.99.101&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.PPPoE.Enabled=yes&PWD=admin&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.PPPoE.Password=123&Network.PPPoE.UserName=abc&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.DNSUpdate.Enabled=yes
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.DNSUpdate.Vendor=dyndns&PWD=admin&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.DNSUpdate.DNSName=IPCAM
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.DNSUpdate.Password=123456&PWD=admin&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&System.HTTPPort=80
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&System.LiveViewPort=6002&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.RTSP.StreamName1=view1&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTSP.Port=555
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.VideoPort=5509
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.AudioPort=5508
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.RTP.R0.PacketSize=1508&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.R0.AlwaysMulticast=yes
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&Network.RTP.R0.VideoPort=5108&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.R0.VideoPort2=5106
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.R0.AudioPort=5104
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&Network.RTP.R0.VideoAddress=239.225.76.52&PWD=admin&USER=admin
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.R0.AudioAddress=239.225.76.50
+[Ret]: Success
+OK
+
+[URL]: http://172.30.10.208/surveon-cgi/param.cgi?action=update&PWD=admin&USER=admin&Network.RTP.R0.TTL=10
+[Ret]: Success
+OK
+
